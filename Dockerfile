@@ -7,5 +7,7 @@ WORKDIR /usr/src
 # 액션에 필요한 소스 파일을 복사함.
 COPY entrypoint.sh .
 
+RUN chmod +x /usr/src/entrypoint.sh
+
 # 컨테이너를 실행 파일로 구성함.
 ENTRYPOINT ["/usr/src/entrypoint.sh"]
