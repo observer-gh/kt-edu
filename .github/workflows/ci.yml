@@ -76,5 +76,5 @@ jobs:
       
       - name: print custom action output
         id: custom-output
-        uses: ./.github/actions/my-custom-action
-        
+        uses: ./.github/actions/hello-action
+
