@@ -73,3 +73,8 @@ jobs:
       - name: Print Output
         id: output
         run: echo "${{ steps.test-action.outputs.time }}"
+      
+      - name: print custom action output
+        id: custom-output
+        uses: ./.github/actions/my-custom-action
+        

@@ -1,0 +1,6 @@
+name: Hello Action
+description: Prints hello
+runs:
+  using: "composite"
+  steps:
+    - run: echo "Hello, ${{ inputs.name }}"
