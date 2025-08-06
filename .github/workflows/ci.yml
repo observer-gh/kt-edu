@@ -77,4 +77,6 @@ jobs:
       - name: print custom action output
         id: custom-output
         uses: ./.github/actions/hello-action
+        with:
+          name: "mf"
 
